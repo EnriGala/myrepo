@@ -1,5 +1,7 @@
 ﻿using System.Web.UI.WebControls;
 using Nancy;
+using Nancy.ModelBinding;
+using Realwebbo.Model;
 using Realwebbo.Services;
 
 namespace WebApplication1.Modules
@@ -27,6 +29,12 @@ namespace WebApplication1.Modules
                 var corporationServ = new CorporationServices();
                 var corporation = corporationServ.FillCorp();
                 return corporation;
+            };
+
+            Post["sendco"] = _ =>
+            {
+                var magicorp = this.Bind<Corporation>();
+                return magicorp;
             };
         }
     }
