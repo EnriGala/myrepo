@@ -3,7 +3,7 @@ using Realwebbo.Model;
 
 namespace Realwebbo.Services
 {
-    class CorporationServices
+    public class CorporationServices
     {
         public Corporation FillCorp()
         {
