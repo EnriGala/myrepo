@@ -1,0 +1,12 @@
+﻿
+namespace Realwebbo.Model
+{
+    public class LegalAddress
+    {
+        public string Address { get; set; }
+        public string City { get; set; }
+        public string Province { get; set; }
+        public string Region { get; set; }
+        public string Country { get; set; }
+    }
+}
